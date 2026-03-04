@@ -51,23 +51,31 @@
 - Click Publish  
 
 ## Code / Project Structure
-chocolate-beverage-export-sales/
-│
-├── Chocolate_and_Beverage_Export_Sales.pbix
-├── data/
-│ ├── sales_transactions.csv
-│ ├── product_information.csv
-│ └── customer_data.csv
-│
-├── documentation/
-│ ├── README.md
-│ ├── data_dictionary.md
-│ └── user_guide.md
-│
-├── reports/
-│ └── monthly_reports/
-│
-└── LICENSE
+
+- Chocolate_and_Beverage_Export_Sales.pbix
+- Main Power BI dashboard file
+
+- data/
+
+- sales_transactions.csv – Raw sales transaction data
+
+- product_information.csv – Product catalog information
+
+- customer_data.csv – Customer and location data
+
+- documentation/
+
+- README.md – Project overview
+
+- data_dictionary.md – Field definitions
+
+- user_guide.md – Dashboard usage guide
+
+- reports/
+
+- monthly_reports/ – Generated monthly reports
+
+- LICENSE – License file
 
 ## Results and Evaluation
 
