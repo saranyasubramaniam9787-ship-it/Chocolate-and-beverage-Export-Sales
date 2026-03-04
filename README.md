@@ -1,6 +1,6 @@
-# Chocolate & Beverage Export Sales Dashboard 📊
+# Chocolate & Beverage Export Sales Dashboard 
 
-## 📋 Project Description
+## Project Description
 
 This Power BI dashboard provides a comprehensive analysis of chocolate and beverage export sales performance across multiple countries. The dashboard offers deep insights into sales trends, product profitability, order cancellations, and salesperson performance, enabling data-driven decision-making for export operations.
 
@@ -31,3 +31,31 @@ This Power BI dashboard provides a comprehensive analysis of chocolate and bever
    ```bash
    git clone https://github.com/yourusername/chocolate-beverage-export-sales.git
    cd chocolate-beverage-export-sales
+  
+
+
+Download Power BI Desktop
+
+Visit the Power BI Desktop download page
+
+Download and install the latest version
+
+Open the Dashboard
+
+Launch Power BI Desktop
+
+Open the file: Chocolate_and_Beverage_Export_Sales.pbix
+
+Configure Data Source (if required)
+
+Go to File → Options and settings → Data source settings
+
+Update the data source path if needed
+
+Click Refresh to load the data
+
+Publish to Power BI Service (optional)
+
+Sign in to your Power BI account
+
+Click Publish to share the dashboard online
