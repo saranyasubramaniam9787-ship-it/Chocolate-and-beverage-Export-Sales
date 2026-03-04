@@ -42,8 +42,7 @@ This Power BI dashboard provides a comprehensive analysis of chocolate and bever
 - Sign in to your Power BI account
 - Click Publish to share the dashboard online
 
-# Data Sources
-
+ Data Sources
 - The dashboard utilizes export sales data with the following key tables:
 # Sales Transactions Table
 - Order ID, Date, Product Name, Category
@@ -122,4 +121,44 @@ This Power BI dashboard provides a comprehensive analysis of chocolate and bever
   - Risk Mitigation: Cancellation patterns highlight areas needing operational improvement
   - Resource Allocation: Sales performance data enables better territory management
   - Customer Satisfaction: Geographic insights help address regional delivery challenges
+  - Future Work
+Planned Enhancements
+Predictive Analytics
+Implement forecasting models for sales trends
+Predict potential cancellations using machine learning
+Demand forecasting for inventory optimization
+Advanced Visualizations
+Add interactive drill-through capabilities
+Implement custom visuals for better user experience
+Real-time dashboard updates
+Enhanced Data Integration
+Connect to live database sources
+Automated data refresh schedules
+Integration with CRM systems
+Additional Metrics
+Customer lifetime value analysis
+Product return rate tracking
+Shipping and logistics performance
+Customer satisfaction scores
+Mobile Optimization
+Create mobile-responsive dashboard layout
+Power BI mobile app configuration
+Advanced Segmentation
+Customer segmentation analysis
+Product bundling opportunities
+Market basket analysis
+Alert System
+Automated alerts for KPI thresholds
+Cancellation rate monitoring
+Low stock notifications
+ Acknowledgments & References
+Tools & Technologies
+Microsoft Power BI Desktop - Data visualization and business analytics
+DAX (Data Analysis Expressions) - Custom calculations and measures
+Power Query - Data transformation and preparation
+Data Sources
+Export sales transaction records
+Product catalog database
+Customer and geographic information systems
+
 
