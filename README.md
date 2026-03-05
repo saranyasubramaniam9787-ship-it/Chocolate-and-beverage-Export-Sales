@@ -203,7 +203,7 @@ Sales peaks occur in **April, June, and July**, indicating seasonal demand for c
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/chocolate-sales-analytics.git
+git clone https://github.com/saranyasubramaniam9787-ship-it/Chocolate-and-beverage-Export-Sales.git
 ```
 
 ### 2️⃣ Open the Power BI File
