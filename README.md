@@ -9,7 +9,6 @@
 - [Key Insights](#-key-insights)
 - [Recommendations](#-recommendations)
 - [How to Use](#-how-to-use)
-
 ---
 
 ## 📊 Project Overview
