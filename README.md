@@ -18,7 +18,7 @@ A comprehensive **Power BI analysis of chocolate and beverage sales data** to ev
 
 ---
 
-# 📊 Project Overview
+# Project Overview
 
 **Objective:**  
 Analyze chocolate and beverage sales data to evaluate business performance in terms of **revenue, expenses, and profitability** across different countries, states, and products.
@@ -37,17 +37,16 @@ Analyze chocolate and beverage sales data to evaluate business performance in te
 
 ---
 
-# 🗂️ Data Source
+## 🗂️ Data Source
 
-| Attribute | Details |
-|-----------|--------|
-| Source | Internal company sales database (Excel Workbook) |
-| Dataset Name | Chocolate_Sales_Dataset.xlsx |
-| Records | 1,500 orders |
-| Total Sales Value | ~₹3M (2,707,782.90) |
-| Key Tables | Sales Fact Table, Product Dimension, Salesperson Dimension |
+- **Source:** Public dataset selected for independent data analysis.
+- **Data Type:** Panel Data (sales observations across multiple products and regions over time)
+- **File Format:** Excel (.xlsx)
+- **Dataset Size:** ~1–2 MB
+- **Records:** 1,500+ sales transactions
+- **Total Transactions:** 2,391
 
-## Core Variables
+### Key Variables
 
 - **Order_ID, Product_ID, SalesPerson_ID** – Unique identifiers  
 - **Country, State** – Geographic dimensions  
@@ -60,11 +59,11 @@ Analyze chocolate and beverage sales data to evaluate business performance in te
 
 # 🛠️ Tools & Technologies
 
-- ✅ **Power BI Desktop** – Data modeling, DAX calculations, interactive dashboards  
-- ✅ **Power Query (M Language)** – ETL, data cleaning & transformation  
-- ✅ **Microsoft Excel** – Source data storage & validation  
-- ✅ **DAX (Data Analysis Expressions)** – Custom metrics such as Profit and Profit Margin  
-- ✅ **Markdown** – GitHub documentation formatting  
+- **Power BI Desktop** – Data modeling, DAX calculations, interactive dashboards  
+- **Power Query (M Language)** – ETL, data cleaning & transformation  
+- **Microsoft Excel** – Source data storage & validation  
+- **DAX (Data Analysis Expressions)** – Custom metrics such as Profit and Profit Margin  
+- **Markdown** – GitHub documentation formatting  
 
 ---
 
@@ -74,15 +73,28 @@ All preprocessing was performed in **Power Query** before loading the data into 
 
 ## Standardization Steps
 
-| Column | Transformation Applied |
-|------|------------------------|
-| Order_ID, Product_ID, SalesPerson_ID | Clean() + Trim() |
-| Country, State | Clean() + Trim() + Capitalize Each Word |
-| Date | Clean() + Trim() + Converted to Date |
-| Sales, Expenses, Selling Price | Clean() + Trim() + Converted to Decimal |
-| Quantity, Boxes, Product Cost, Customers | Clean() + Trim() + Converted to Whole Number |
-| Order Status | Clean() + Trim() + Converted to Text |
+- **Order_ID, Product_ID, SalesPerson_ID**
+  - Applied `Clean()` and `Trim()` to remove hidden characters and extra spaces.
 
+- **Country, State**
+  - Applied `Clean()` and `Trim()`.
+  - Standardized formatting using **Capitalize Each Word**.
+
+- **Date**
+  - Applied `Clean()` and `Trim()`.
+  - Converted the column to **Date data type**.
+
+- **Sales, Expenses, Selling Price**
+  - Applied `Clean()` and `Trim()`.
+  - Converted values to **Decimal Number format**.
+
+- **Quantity, Boxes, Product Cost, Customers**
+  - Applied `Clean()` and `Trim()`.
+  - Converted values to **Whole Number format**.
+
+- **Order Status**
+  - Applied `Clean()` and `Trim()`.
+  - Converted values to **Text format**.
 ## Feature Engineering (DAX)
 
 ```DAX
@@ -95,10 +107,10 @@ Profit_Margin = DIVIDE(Sales[Profit], Sales[Selling Price])
 
 ## Data Quality Checks
 
-- ✅ Removed hidden characters and extra whitespace  
-- ✅ Standardized geographic field formatting  
-- ✅ Validated numeric data types for aggregations  
-- ✅ Used `DIVIDE()` to prevent division-by-zero errors  
+- Removed hidden characters and extra whitespace  
+- Standardized geographic field formatting  
+- Validated numeric data types for aggregations  
+- Used `DIVIDE()` to prevent division-by-zero errors  
 
 ---
 
