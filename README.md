@@ -1,101 +1,134 @@
-## Chocolate & Beverage Export Sales Dashboard
+# Chocolate & Beverage Sales and Profitability Analysis
 
-## Project Description
+## 📖 Table of Contents
+- [Project Overview](#-project-overview)
+- [Data Source](#-data-source)
+- [Tools & Technologies](#-tools--technologies)
+- [Data Cleaning & Preparation](#-data-cleaning--preparation)
+- [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)
+- [Key Insights](#-key-insights)
+- [Recommendations](#-recommendations)
+- [How to Use](#-how-to-use)
 
-- This Power BI dashboard provides a comprehensive analysis of chocolate and beverage export sales performance across multiple countries.
-- The dashboard offers insights into sales trends, product profitability, order cancellations, and salesperson performance.
-- It supports data-driven decision-making for export operations.
+---
 
-## Key Features
+## 📊 Project Overview
+This project analyzes chocolate and beverage sales data to evaluate business performance in terms of revenue, expenses, and profitability across different countries, states, and products.
 
-- Overall Product Sales Performance
-- Product Profitability Analysis
-- Sales & Expense Tracking
-- Cancellation Analytics
-- Geographic Performance
-- Salesperson Performance
+The goal of this analysis is to identify high-performing and low-performing products, understand regional sales patterns, and analyze profit margins to support data-driven business decisions.
 
-## Key Metrics
+---
 
-- Total Sales: ₹3M  
-- Total Profit: ₹2.70M  
-- Total Order Quantity: 1,500 units  
-- Total Cancelled Quantity: 80 units  
-- Total Loss: ₹138K  
+## 🗂️ Data Source
+- Dataset used for **academic data analysis and visualization practice**.
+- The dataset contains **1,500 sales transactions**.
+- Includes an **order-level sales table** and supporting **dimension tables**.
 
-## Installation Instructions
+### Key Variables
+- Order ID
+- Product ID
+- SalesPerson ID
+- Country
+- State
+- Order Date
+- Selling Price
+- Product Cost
+- Sales Amount
+- Expenses
+- Profit
+- Profit Margin
+- Order Status
+- Customers
+- Quantity
 
-## Prerequisites
+---
 
-- Power BI Desktop (Latest version recommended)
-- Windows 10/11 or macOS (with Parallels or Boot Camp)
+## 🛠️ Tools & Technologies
+- **Microsoft Excel** – Dataset storage
+- **Power BI Desktop** – Data modeling and dashboard creation
+- **Power Query** – Data cleaning and transformation
+- **DAX (Data Analysis Expressions)** – Calculated columns and metrics
+- **Data Visualization** – Interactive dashboards
 
-## Setup Steps
+---
 
-- Clone the repository  
-- Download Power BI Desktop  
-- Visit Power BI Desktop Download  
-- Download and install the latest version  
+## 🧹 Data Cleaning & Preparation
+The following data preprocessing steps were performed:
 
-- Open the dashboard  
-- Launch Power BI Desktop  
-- Open `Chocolate_and_Beverage_Export_Sales.pbix`  
+- Cleaned and trimmed text fields to remove hidden spaces and inconsistencies.
+- Standardized **Country and State** names.
+- Converted **Date column** to proper date format.
+- Converted numerical columns such as **Sales, Expenses, Selling Price, and Product Cost** to appropriate data types.
+- Standardized **Order Status and Customer fields**.
+- Created calculated columns using **DAX formulas**.
 
-- Configure data source (if required)  
-- Go to File → Options and settings → Data source settings  
-- Update the data source path if required  
-- Click Refresh  
+### Calculated Metrics
 
-- Publish to Power BI Service (optional)  
-- Sign in to your Power BI account  
-- Click Publish  
+**Profit Calculation**
+```
+Profit = Sales - (Product Cost + Expenses)
+```
 
-## Code / Project Structure
+**Profit Margin Calculation**
+```
+Profit_Margin = DIVIDE(Sales[Profit], Sales[Selling Price])
+```
 
-- Chocolate_and_Beverage_Export_Sales.pbix
-- Main Power BI dashboard file
+---
 
-- data/
+## 🔍 Exploratory Data Analysis (EDA)
 
-- sales_transactions.csv – Raw sales transaction data
+The analysis explored several business questions:
 
-- product_information.csv – Product catalog information
+- What is the overall sales performance across countries?
+- Which products generate the highest revenue and profit?
+- How do sales trends vary across months?
+- Which regions experience higher order cancellations?
+- Which product categories contribute the most to profitability?
 
-- customer_data.csv – Customer and location data
+The Power BI dashboard visualizes these insights through KPIs, charts, and trend analysis.
 
-- documentation/
+---
 
-- README.md – Project overview
+## 💡 Key Insights
 
-- data_dictionary.md – Field definitions
+- Total sales are approximately **₹3 million from 1,500 orders**.
+- **Top-selling products:**
+  - Milk Choco Delights
+  - Hot Cocoa
+  - Chocolate Almond Bites
+- **Most profitable category:** Bites & Snacks, followed by Cookies and Cocoa Drinks.
+- **Highest profit by country:**
+  - United Kingdom
+  - Canada
+  - Philippines
+- Sales data shows **seasonal demand patterns**, especially for chocolate and cocoa-based products.
+- **United Kingdom has the highest order cancellations**, indicating potential operational challenges.
 
-- user_guide.md – Dashboard usage guide
+---
 
-- reports/
+## 🚀 Recommendations
 
-- monthly_reports/ – Generated monthly reports
+Based on the analysis:
 
-- LICENSE – License file
+- Increase inventory levels for high-demand products such as:
+  - Hot Cocoa
+  - Milk Choco Delights
+  - Chocolate Almond Bites
+- Improve supply chain and delivery processes in the **United Kingdom** to reduce cancellation rates.
+- Focus marketing campaigns on **high-margin categories** like Bites & Snacks and Cookies.
+- Provide support and coaching for salespersons with high cancellation rates.
+- Implement **demand forecasting models** to improve inventory planning.
+- Introduce **cancellation root-cause tracking** to identify logistics or supply issues.
 
-## Results and Evaluation
+---
 
-- Top products and regions contribute the majority of revenue.
-- United Kingdom and Canada show strong profit performance.
-- Order cancellations highlight opportunities for operational improvement.
+## ⚙️ How to Use
 
-## Future Work
-
-- Add sales and demand forecasting.
-- Improve visuals with drill-through and custom charts.
-- Enable automated data refresh and live data connections.
-
-## Tools & Technologies
-
-- Microsoft Power BI Desktop
-- DAX (Data Analysis Expressions)
-- Power Query
-
-## Acknowledgments
-
-- Export sales transaction data
-- Product and customer master data
+1. Download the **Power BI (.pbix) file** from the repository.
+2. Open the file using **Power BI Desktop**.
+3. Explore the interactive dashboard to analyze:
+   - Sales performance
+   - Profitability trends
+   - Regional sales distribution
+   - Product performance insights
