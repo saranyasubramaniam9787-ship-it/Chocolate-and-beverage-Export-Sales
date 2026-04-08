@@ -259,9 +259,4 @@ This Power BI dashboard provides a **complete analytical view of chocolate and b
 - Improve **sales performance and regional operations**
 
 By leveraging these insights, organizations can **increase revenue, reduce cancellations, and improve supply chain efficiency through data-driven decision-making**.
-## 📊Project Overview
-This project analyzes chocolate and beverage sales data to evaluate business performance in terms of revenue, expenses, and profitability across different countries, states, and products.
 
-The goal of this analysis is to identify high-performing and low-performing products, understand regional sales patterns, and analyze profit margins to support data-driven business decisions.
-
----
