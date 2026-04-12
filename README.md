@@ -1,5 +1,5 @@
 
-# Chocolate & Beverage Sales Analytics Dashboard
+# Chocolate & Beverage Sales Analysis
 
 A comprehensive **Power BI analysis of chocolate and beverage sales data** to evaluate business performance, identify profitable products, and support **data-driven decision-making across regions**.
 
