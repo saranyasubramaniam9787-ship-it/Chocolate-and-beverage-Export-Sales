@@ -6,17 +6,17 @@ A comprehensive **Power BI analysis of chocolate and beverage sales data** to ev
 ---
 
 ### 📖 Table of Contents
-- [Project Overview](#-project-overview)
-- [Data Source](#-data-source)
-- [Tools & Technologies](#-tools--technologies)
-- [Data Cleaning & Preparation](#-data-cleaning--preparation)
-- [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)
-- [Key Insights](#-key-insights)
-- [Recommendations](#-recommendations)
-- [How to Use](#-how-to-use)
-- [Conclusion](#-conclusion)
 
----
+- [Project Overview](#project-overview)
+- [Data Source ](#data-source)
+- [Tools & Technologies](#tools--technologies)
+- [Data Cleaning & Transformation](#data-cleaning--transformation)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [Key Insights](#key-insights)
+- [Recommendations](#recommendations)
+- [How to Use](#how-to-use)
+- [Conclusion](#conclusion)
+
 
 ### Project Overview
 
@@ -52,7 +52,7 @@ Analyze chocolate and beverage sales data to evaluate business performance in te
 - **Order Status, Customers, Quantity, Box Size** – Operational attributes  
 
 
-### 🛠️ Tools & Technologies
+### Tools & Technologies
 
 - **Power BI Desktop** – Data modeling, DAX calculations, interactive dashboards  
 - **Power Query (M Language)** – ETL, data cleaning & transformation  
@@ -62,7 +62,7 @@ Analyze chocolate and beverage sales data to evaluate business performance in te
 
 ---
 
-### 🧹 Data Cleaning & Preparation
+### Data Cleaning & Transformation
 
 All preprocessing was performed in **Power Query** before loading the data into the Power BI model.
 
@@ -109,7 +109,7 @@ Profit_Margin = DIVIDE(Sales[Profit], Sales[Selling Price])
 
 
 
-### 🔍 Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
 ### Statistical Summary – Sales Distribution
 
