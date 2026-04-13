@@ -1,11 +1,11 @@
 
-# Chocolate & Beverage Sales Analysis
+## Chocolate & Beverage Sales Analysis
 
 A comprehensive **Power BI analysis of chocolate and beverage sales data** to evaluate business performance, identify profitable products, and support **data-driven decision-making across regions**.
 
 ---
 
-# 📖 Table of Contents
+### 📖 Table of Contents
 - [Project Overview](#-project-overview)
 - [Data Source](#-data-source)
 - [Tools & Technologies](#-tools--technologies)
@@ -18,26 +18,22 @@ A comprehensive **Power BI analysis of chocolate and beverage sales data** to ev
 
 ---
 
-# Project Overview
+### Project Overview
 
 **Objective:**  
 Analyze chocolate and beverage sales data to evaluate business performance in terms of **revenue, expenses, and profitability** across different countries, states, and products.
 
-## Business Problems Addressed
+### Business Problems Addressed
 
-🔍 Identify high-performing and low-performing chocolate and beverage products  
-
-🌍 Understand regional sales patterns and profitability by country/state  
-
-💰 Analyze profit margins to optimize pricing and cost strategies  
-
-📉 Investigate order cancellation patterns to reduce revenue loss  
-
-📈 Support data-driven decisions for inventory, marketing, and supply chain improvements  
+- Identify high-performing and low-performing chocolate and beverage products  
+- Understand regional sales patterns and profitability by country/state  
+- Analyze profit margins to optimize pricing and cost strategies  
+- Investigate order cancellation patterns to reduce revenue loss  
+- Support data-driven decisions for inventory, marketing, and supply chain improvements  
 
 ---
 
-## 🗂️ Data Source
+### 🗂️ Data Source
 
 - **Source:** Public dataset selected for independent data analysis.
 - **Data Type:** Panel Data (sales observations across multiple products and regions over time)
@@ -55,9 +51,8 @@ Analyze chocolate and beverage sales data to evaluate business performance in te
 - **Profit, ProfitMargin** – Calculated profitability KPIs  
 - **Order Status, Customers, Quantity, Box Size** – Operational attributes  
 
----
 
-# 🛠️ Tools & Technologies
+### 🛠️ Tools & Technologies
 
 - **Power BI Desktop** – Data modeling, DAX calculations, interactive dashboards  
 - **Power Query (M Language)** – ETL, data cleaning & transformation  
@@ -67,11 +62,11 @@ Analyze chocolate and beverage sales data to evaluate business performance in te
 
 ---
 
-# 🧹 Data Cleaning & Preparation
+### 🧹 Data Cleaning & Preparation
 
 All preprocessing was performed in **Power Query** before loading the data into the Power BI model.
 
-## Standardization Steps
+### Standardization Steps
 
 - **Order_ID, Product_ID, SalesPerson_ID**
   - Applied `Clean()` and `Trim()` to remove hidden characters and extra spaces.
@@ -95,7 +90,7 @@ All preprocessing was performed in **Power Query** before loading the data into 
 - **Order Status**
   - Applied `Clean()` and `Trim()`.
   - Converted values to **Text format**.
-## Feature Engineering (DAX)
+### Feature Engineering (DAX)
 
 ```DAX
 -- Profit Calculation
@@ -105,18 +100,18 @@ Profit = Sales[Sales] - (Sales[Product Cost] + Sales[Expenses])
 Profit_Margin = DIVIDE(Sales[Profit], Sales[Selling Price])
 ```
 
-## Data Quality Checks
+### Data Quality Checks
 
 - Removed hidden characters and extra whitespace  
 - Standardized geographic field formatting  
 - Validated numeric data types for aggregations  
 - Used `DIVIDE()` to prevent division-by-zero errors  
 
----
 
-# 🔍 Exploratory Data Analysis (EDA)
 
-## Statistical Summary – Sales Distribution
+### 🔍 Exploratory Data Analysis (EDA)
+
+### Statistical Summary – Sales Distribution
 
 | Metric | Value |
 |------|------|
@@ -129,7 +124,7 @@ Profit_Margin = DIVIDE(Sales[Profit], Sales[Selling Price])
 | Range | 1.00 – 30,502.50 |
 | Total Sum | 2,707,782.90 |
 
-## Key Analytical Questions
+### Key Analytical Questions
 
 - What are the **top-selling products by revenue and volume**?
 - Which products generate the **highest profit margins**?
@@ -137,68 +132,67 @@ Profit_Margin = DIVIDE(Sales[Profit], Sales[Selling Price])
 - Is there a **relationship between order size and cancellation risk**?
 - Which **regions or salespersons need operational improvements**?
 
----
 
-# 💡 Key Insights
+### Key Insights
 
-🏆 **Top-Selling Products**  
+**Top-Selling Products**  
 - Milk Choco Delights  
 - Hot Cocoa  
 - Chocolate Almond Bites  
 
-💰 **Most Profitable Category**  
+**Most Profitable Category**  
 - Bites & Snacks  
 - Cookies  
 - Cocoa Drinks  
 
-🌐 **Regional Performance**
+**Regional Performance**
 
 - 🇬🇧 United Kingdom and 🇨🇦 Canada generate the **highest total profit**
 - However, **United Kingdom has the highest cancellations (80 orders)**
 
-📅 **Seasonal Patterns**
+ **Seasonal Patterns**
 
 Sales peaks occur in **April, June, and July**, indicating seasonal demand for chocolate and cocoa products.
 
-📉 **Cancellation Drivers**
+**Cancellation Drivers**
 
 - Products with highest cancellations: **Hot Cocoa and Milk Choco Delights**
 - Cancellations increase during **June and July**
 
 ---
 
-# 🚀 Recommendations
+### Recommendations
 
-## 📦 Inventory & Supply Chain
+### Inventory & Supply Chain
 
 - Increase stock levels for **Hot Cocoa, Milk Choco Delights, and Chocolate Almond Bites** during peak months.
 - Improve **logistics and delivery operations in the UK**.
 
-## 🎯 Marketing Strategy
+### Marketing Strategy
 
 - Promote **high-margin categories such as Bites & Snacks and Cookies**.
 - Conduct **customer feedback surveys** for products with high cancellation rates.
 
-## 👥 Sales Performance
+### Sales Performance
 
 - Provide training for **salespersons with higher cancellation rates**.
 - Segment territories by **risk and performance level**.
 
-## 🤖 Advanced Analytics
+### Advanced Analytics
 
 - Implement **demand forecasting models**.
 - Build a **cancellation root-cause tracking system**.
 
 ---
 
-# ⚙️ How to Use
+### How to Use
 
-## Prerequisites
+### Prerequisites
 
 - Microsoft **Power BI Desktop**
 - Excel to open the source dataset
 
-## Running the Project
+### Running the Project
 
 ### 1️⃣ Clone the Repository
 
@@ -231,7 +225,7 @@ Use **slicers (Country, Date, Product Category)** for interactive filtering.
 
 ---
 
-# 📁 Project Structure
+### 📁 Project Structure
 
 ```
 chocolate-sales-analytics
@@ -249,7 +243,7 @@ chocolate-sales-analytics
 
 ---
 
- Conclusion
+ ### Conclusion
 
 This Power BI dashboard provides a **complete analytical view of chocolate and beverage sales performance**, helping businesses to:
 
